@@ -1,0 +1,286 @@
+/*
+Project Name: Relaxr Blog
+Client: Relaxr
+Author: Nadiah Abdulrahim
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+    background-color: #f0efef;
+     color: #000;
+     font-size: 24px;
+     font-weight: 300;
+     line-height: 1.4;
+     font-family: font-family: Open Sans, Helvetica, Arial, sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#main {
+  width: 960px;
+  margin: auto;
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+h1 {
+  font-family: Open Sans, Helvetica, Arial, sans-serif;
+  font-size: 36px;
+  letter-spacing: 2px;
+  color: white;
+}
+
+h2 {
+  font-family: Open Sans, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #033048;
+  padding-bottom: 10px;
+}
+
+.firstcharacter { 
+  float: left; 
+  color: #606161; 
+  font-size: 75px; 
+  line-height: 60px; 
+  padding-top: 4px; 
+  padding-right: 8px; 
+  padding-left: 3px;
+  font-family: font-family: Open Sans, Helvetica, Arial, sans-serif;
+}
+
+#logo {
+  font-family: Open Sans, Helvetica, Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  color: white;
+}
+
+footer #logo {
+  color: yellow;
+  font-weight: 800;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0 20px 0;
+}
+
+header {
+  background: #033048;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px 10px 40px;
+}
+
+header nav {
+  font-family: Open Sans, Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+header nav a:link {
+  color: #f9e42e;
+  text-decoration: none;
+ }
+
+header nav a:visited {
+    color: #f9e42e;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ #mainContainer{
+  width: 75%;
+  padding: 30px 30px 50px 30px;
+  text-align: justify;
+}
+
+#mainContainer p{
+  font-family: Open Sans, Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: #606161;
+  padding-bottom: 30px;
+}
+
+.readMore {
+  display: block;
+  text-align: right;
+  color: #033048;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: Open Sans, Helvetica, Arial, sans-serif;
+}
+
+#sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  font-family: Open Sans, Helvetica, Arial, sans-serif;
+  color: #033048;
+  width: 240px;
+  padding: 30px 0 0 10px;
+}
+
+#sidebar nav a:link {
+  color: #033048;
+  text-decoration: none;
+ }
+
+#sidebar nav a:visited {
+    color: #033048;
+    text-decoration: none;
+}
+
+#sidebar nav a:hover {
+    color: ##f9e42e;
+    text-decoration: none;
+}
+
+#sidebar h3 {
+  font-family: Open Sans, Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+#sidebar ul li {
+  font-family: Open Sans, Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.categories {
+  padding-bottom: 30px;
+}
+
+.about {
+  padding-bottom: 30px;
+}
+
+.learnMore {
+  font-family: Open Sans, Helvetica, Arial, sans-serif
+  font-size: 22pt;
+  font-weight: 600;
+}
+
+.yellowBar {
+  background-color: #f9e42e;
+  width: 100%;
+  padding: 15px 0 15px 0;
+}
+
+.button {
+  border-radius: 5px;
+  font-weight: 800;
+  padding: 10px 0;
+  width: 150px;
+  font-size: 14px;
+  text-align:center;
+  display: block;
+  margin: 0px auto;
+}
+
+.blue {
+  background: #033048;
+  color: #ffffff;
+  font-family: Open Sans, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+footer { 
+  background-color: black;
+}
+
+footer p {
+  font family: Open Sans, Helvetica, Arial, sans-serif;
+  font color: #ffffff;
+  font-weight: 300;
+  font-size: 10px;
+}
+
+.facebook {
+  padding: 20px 20px 20px 20px;
+}
+
+.twitter {
+  padding: 20px 20px 20px 20px;
+}
+
+.copyright {
+  font family: Open Sans, Helvetica, Arial, sans-serif;
+  font color: #ffffff;
+  font-weight: 300;
+  font-size: 10px;
+  padding: 20px 20px 20px 20px;
+}
+
+
+
+
+
+
